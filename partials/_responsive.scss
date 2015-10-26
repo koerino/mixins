@@ -1,15 +1,15 @@
 //responsive design breakpoints
 @mixin responsive($deviceSize) {
     @if $deviceSize == sm {
-        @media screen and (max-width: 48em) {@content}
+        @media screen and (max-width: 767px) {@content}
     }
     @if $deviceSize == md {
-        @media screen and (min-width: 48em) and (max-width: 64em) {@content}
+        @media screen and (min-width: 768px) and (max-width: 1023px) {@content}
     }
     @if $deviceSize == lg {
-        @media screen and (min-width: 64em) and (max-width: 75em) {@content}
+        @media screen and (min-width: 1024px) and (max-width: 1199px) {@content}
     }
     @if $deviceSize == xl {
-        @media screen and (min-width: 75em) {@content}
+        @media screen and (min-width: 1200px) {@content}
     }
 }
