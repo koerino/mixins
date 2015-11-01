@@ -1,7 +1,7 @@
 //CSS3 transition
-@mixin transition($property, $duration, $timingFunction, $delay) {
-    -webkit-transition: $property $duration $timingFunction $delay;
-    -moz-transition: $property $duration $timingFunction $delay;
-    -o-transition: $property $duration $timingFunction $delay;
-    transition: $property $duration $timingFunction $delay;
+@mixin transition($options...) {
+    -webkit-transition: $options;
+    -moz-transition: $options;
+    -o-transition: $options;
+    transition: $options;
 }
