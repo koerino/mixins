@@ -1,4 +1,10 @@
 //animation keyframes
+@mixin animation($name, $duration, $speed, $delay: 0, $count: 1, $direction: normal) {
+    -webkit-animation: $name $duration $speed $delay $count $direction;
+	-ms-animation: $name $duration $speed $delay $count $direction;
+	animation: $name $duration $speed $delay $count $direction;
+}
+
 @mixin keyframes($animation) {
     @-webkit-keyframes #{$animation} {
         @content; 
